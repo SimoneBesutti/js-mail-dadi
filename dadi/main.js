@@ -1,28 +1,30 @@
+
 //Dichiaro le variabili
-var Generatorecasuale, generatoreComputer;
+var generatoreCasuale, generatoreComputer;
 
 
 //L'utente clicca sul dado
-function myfunction() {
-    Generatorecasuale = Math.floor(Math.random() *6) + 1;
+    generatoreCasuale = Math.floor(Math.random() *6) + 1;
     //document.writeln(Generatorecasuale);
     //document.writeln(generatoreComputer);
-    console.log(Generatorecasuale);
+    console.log(generatoreCasuale);
+    
+    //ora il computer sceglie
+    generatoreComputer = Math.floor(Math.random() *6) + 1;
     console.log(generatoreComputer);
-}
+
+    if (generatoreCasuale > generatoreComputer){
+        document.writeln("Hai vinto!");
+    }  else if (generatoreCasuale == generatoreComputer){
+        document.writeln("Sono uguali");
+    }   else (generatoreComputer > generatoreCasuale)
+        document.writeln("Hai perso!");
 
 
-//ora il computer sceglie
-generatoreComputer = Math.floor(Math.random() *6) + 1;
 
 
 //ora si confrontano i risultati e si determina il vincitore
-if (Generatorecasuale > generatoreComputer){
-    document.writeln("Hai vinto!");
-}   if (Generatorecasuale == generatoreComputer){
-    document.writeln("Sono uguali");
-}   else (generatoreComputer > Generatorecasuale)
-    document.writeln("Hai perso!");
+
 
 
 
