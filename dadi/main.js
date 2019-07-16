@@ -15,9 +15,10 @@ var generatoreCasuale, generatoreComputer;
 
     if (generatoreCasuale > generatoreComputer){
         document.writeln("Hai vinto!");
+    
     }  else if (generatoreCasuale == generatoreComputer){
         document.writeln("Sono uguali");
-    }   else (generatoreComputer > generatoreCasuale)
+    }  else if (generatoreComputer > generatoreCasuale)
         document.writeln("Hai perso!");
 
 
